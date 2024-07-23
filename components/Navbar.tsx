@@ -1,14 +1,18 @@
 import Link from "next/link";
-import { FaApple } from "react-icons/fa";
 
 import { NavLinks } from "@/constants";
+import DownloadButton from "./DownloadButton";
+import Image from "next/image";
+
+import logo from "@/assets/raycast_logo.png";
 
 const Navbar = () => {
   return (
-    <div className="absolute top-6  w-full  h-20  flex-center">
-        <div className="bg-[#0e0f10] flex justify-between items-center gap-40 px-7 py-5 mx-12 rounded-xl border border-y-2 border-neutral-900  border-l-1 border-r-1 ">
-        <div>
-            <span></span>
+    <div className="sticky top-6  w-full  h-20  flex-center">
+        <div 
+        className="bg-[#131313] flex justify-between items-center gap-40 px-7 py-5 mx-0 rounded-xl border border-y-2 border-neutral-800  border-l-1 border-r-1 ">
+        <div className="flex justify-between items-center gap-2">
+            <Image src={logo} width={30} height={30} alt="raycast logo" />
             <span>Raycast</span>
         </div>
 
@@ -21,17 +25,14 @@ const Navbar = () => {
                 ))
             }
         </nav>
-
+        
         <div className="h-fit flex justify-between items-center gap-7 ">
             <span className="text-gray-400 text-sm font-semibold hover:text-white">Log in</span>
-            <button className="bg-white rounded-md flex justify-between items-center gap-2 py-1 px-2 ">
-                <FaApple  color="black" className="flex-center" />
-                <span className="text-black"> Download </span>
-            </button>
+            <DownloadButton />
         </div>
         </div>    
     </div>
   )
 }
 
-export default Navbar
+export default Navbar;
