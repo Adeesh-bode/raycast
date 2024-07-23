@@ -5,7 +5,7 @@ import { NavLinks } from "@/constants";
 
 const Navbar = () => {
   return (
-    <div className="fixed top-6  w-full  h-16  flex-center">
+    <div className="absolute top-6  w-full  h-20  flex-center">
         <div className="bg-[#0e0f10] flex justify-between items-center gap-40 px-7 py-5 mx-12 rounded-xl border border-y-2 border-neutral-900  border-l-1 border-r-1 ">
         <div>
             <span></span>
