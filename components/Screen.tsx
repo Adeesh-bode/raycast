@@ -21,9 +21,7 @@ const Screen = () => {
 
     return () => clearInterval(interval);
   }, []);
-
-
-
+ 
   return (
     <div className="relative w-full   flex flex-col justify-start items-center  py-20">
       <div className="w-full absolute inset-0 z-0 py-6 px-3">
@@ -37,7 +35,7 @@ const Screen = () => {
           particleColor="#FFFFFF"
         />
       </div>
-      <div className="w-11/12  z-10  p-[6px] bg-neutral-600 rounded-md screen-shadow ">
+      <div className="w-11/12  z-10  p-[4px] bg-neutral-600 rounded-md screen-shadow ">
         <div className="w-full h-screen bg-black rounded-md flex flex-col justify-start overflow-auto " >
           <ScreenNavbar />
           <Window currentWindow={selectedWindow} />
