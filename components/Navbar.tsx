@@ -8,7 +8,7 @@ import logo from "@/assets/raycast_logo.png";
 
 const Navbar = () => {
   return (
-    <div className="sticky top-6  w-full  h-20  flex-center">
+    <div className="sticky top-6 z-50 w-full  h-20  flex-center">
         <div 
         className="bg-[#131313] flex justify-between items-center gap-40 px-7 py-5 mx-0 rounded-xl border border-y-2 border-neutral-800  border-l-1 border-r-1 ">
         <div className="flex justify-between items-center gap-2">

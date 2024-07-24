@@ -9,7 +9,7 @@ const ScreenDemo = () => {
             <h3 className="text-neutral-500 text-center">One interface, everything you need.</h3>
         </div>
         
-          <div className="w-4/5 h-full relative ">
+          <div className="w-full h-full relative ">
              {/* yaha aeega partilces */}
             <Screen />
           </div>
