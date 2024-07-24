@@ -8,7 +8,7 @@ interface SwitchProps {
     selectWindow: React.Dispatch<React.SetStateAction<string>>; // is set function of useState which contains string
 }
 
-const iconMap = {
+export const iconMap = {
     clipboard: <FaRegClipboard />,
     ai: <BsStars />,
     emoji: <FaRegFaceSmile />,
