@@ -11,7 +11,7 @@ import { FaBatteryFull } from "react-icons/fa6";
 
 const ScreenNavbar = () => {
   return (
-    <div className="w-full flex justify-between items-center text-xs p-2 ">
+    <div className="w-full h-fit flex justify-between items-center text-xs p-2 ">
         <div className="flex items-center justify-start gap-7">
         <div className="flex justify-between items-center gap-3 ">
             <AiFillApple size={20} />
@@ -28,15 +28,15 @@ const ScreenNavbar = () => {
         </div>
         <div className="flex justify-between items-center gap-3">
             <CiPickerHalf />
-            <div className="seperate gap-2">
+            <div className="seperate gap-1">
                 <FaGithub />
                 <span>49</span>
             </div>   
-            <div className="seperate gap-2">
+            <div className="seperate gap-1">
                 <CgLinear />
                 <span>1</span>
             </div>   
-            <div className=" seperate gap-1">
+            <div className=" seperate">
                 <span>Lunch</span>
                 <LuDot />
                 <span>37 min left </span>
