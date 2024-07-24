@@ -23,14 +23,14 @@ const Screen = () => {
   }, []);
  
   return (
-    <div className="relative w-full   flex flex-col justify-start items-center  py-20">
+    <div className="relative w-full   flex flex-col justify-start items-center  py-16">
       <div className="w-full absolute inset-0 z-0 py-6 px-3">
         <SparklesCore
           id="tsparticlesfullpage"
           background="transparent"
-          minSize={0.2}
-          maxSize={0.6}
-          particleDensity={70}
+          minSize={0.3}
+          maxSize={0.7}
+          particleDensity={80}
           className="w-full h-full "
           particleColor="#FFFFFF"
         />

@@ -50,8 +50,8 @@ const FadedKeyboard = () => {
         </div>
             
         {/* third row */}
-        <div className='opacity-25 flex justify-between items-center gap-2 text-2xl'>
-            <div className='flex justify-start items-end p-2 border-2  border-neutral-600 bg-neutral-950  rounded-md w-36 h-24 '>
+        <div className=' flex justify-between items-center gap-2 text-2xl'>
+            <div className='opacity-25 flex justify-start items-end p-2 border-2  border-neutral-600 bg-neutral-950  rounded-md w-36 h-24 '>
                 <BiArrowToRight className='text-neutral-500' />
             </div>
             <div className='flex flex-col justify-between items-start p-2 border-2  border-neutral-600 bg-neutral-950  rounded-md w-36 h-24 '>
@@ -84,10 +84,10 @@ const FadedKeyboard = () => {
                     <span className='text-white'>Reliable. </span> {' '}99.8% crash-free rate.
                 </div>
             </div>
-            <div className='flex-center border-2 border-neutral-600 bg-neutral-950 rounded-md w-24 h-24'>
+            <div className='opacity-15 flex-center border-2 border-neutral-600 bg-neutral-950 rounded-md w-24 h-24'>
                 <div className=' text-center' >S</div>
             </div>
-            <div className='flex-center border-2 border-neutral-600 bg-neutral-950 rounded-md w-24 h-24'>
+            <div className='opacity-5 flex-center border-2 border-neutral-600 bg-neutral-950 rounded-md w-24 h-24'>
                 <div className=' text-center' >D</div>
             </div>
             
@@ -95,7 +95,7 @@ const FadedKeyboard = () => {
         
         {/* Fifth row */}
         <div className=' flex justify-between items-center gap-2 text-2xl'>
-            <div className='opacity-10 flex justify-start items-end p-2 border-2  border-neutral-600 bg-neutral-950  rounded-md w-36 h-24 '>
+            <div className='opacity-15 flex justify-start items-end p-2 border-2  border-neutral-600 bg-neutral-950  rounded-md w-36 h-24 '>
                 <TbArrowBigUpLine className='text-neutral-500' />
             </div>
             <div className='opacity-10 flex-center border-2 border-neutral-600 bg-neutral-950 rounded-md w-24 h-24'>

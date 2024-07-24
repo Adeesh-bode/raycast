@@ -3,7 +3,7 @@ import { SparklesCore } from "./ui/sparkles";
 
 const ScreenDemo = () => {
   return (
-    <div className="w-full min-h-screen  flex flex-col justify-start items-center gap-5">
+    <div className="w-full min-h-screen  flex flex-col justify-start items-center ">
         <div className="flex flex-col justify-between items-center gap-1">
             <h2 className="text-white text-center ">Take shortcuts, not detours.</h2>
             <h3 className="text-neutral-500 text-center">One interface, everything you need.</h3>
