@@ -8,7 +8,7 @@ import Window from "./Window";
 
 const Screen = () => {
   const windows : string[] = [ 'clipboard' , 'ai' , 'emoji' , 'calculator' , 'management']
-  const [ selectedWindow , setSelectedWindow ] = useState<string>( windows[0] );
+  const [ selectedWindow , setSelectedWindow ] = useState<string>( windows[1] );
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -17,7 +17,7 @@ const Screen = () => {
         const nextIndex = (currentIndex + 1) % windows.length;
         return windows[nextIndex];
       });
-    }, 3000);
+    }, 8000);
 
     return () => clearInterval(interval);
   }, []);
