@@ -44,7 +44,7 @@ const data = [
   },
   {
     iconsrc: '/arcicon.webp',
-    bgimgsrc: '/arcbg.web',
+    bgimgsrc: '/arcbg.webp',
     title: 'Arc',
     redirecturl: '/',
     description: "navigate your Arc browser&apos;s history and open tabs. You can open recent tabs in Arc or Little Arc as well as copy websites",
