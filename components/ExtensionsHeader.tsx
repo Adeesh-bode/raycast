@@ -12,7 +12,7 @@ const ExtensionsHeader = () => {
   };
 
   return (
-    <div className="w-4/5  flex justify-between items-center ">
+    <div className="w-4/5  flex justify-between items-center cursor-pointer ">
       
       <div className="w-1/3 flex flex-col justify-start items-start gap-3 text-left text-xl">
         <div>There&apos;s an extension for that.</div>
