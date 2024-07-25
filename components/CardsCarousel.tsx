@@ -12,7 +12,7 @@ import {
   IconX,
 } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion , useAnimation } from "framer-motion";
 import Image, { ImageProps } from "next/image";
 import { RiArrowRightSLine } from "react-icons/ri";
 
@@ -165,6 +165,13 @@ export const Card = ({
   index: number;
   layout?: boolean;
 }) => {
+
+  const controls = useAnimation();
+
+  React.useEffect(() => {
+    controls.start({ opacity: 1, y: 0 });
+  }, [controls]);
+
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const { onCardClose, currentIndex } = useContext(CarouselContext);

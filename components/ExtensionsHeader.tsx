@@ -9,6 +9,7 @@ interface ExtensionsHeaderProps {
 
 const ExtensionsHeader: React.FC<ExtensionsHeaderProps> = ({ extension, selectExtension }) => {
   const ExtensionOptions = ['Productivity', 'Engineering', 'Design', 'Writing'];
+  
   const handleChange = (extension: string) => {
     selectExtension(extension);
   };
