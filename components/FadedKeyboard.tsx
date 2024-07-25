@@ -24,7 +24,7 @@ const FadedKeyboard = () => {
       variants={container} 
       initial="hidden" 
       animate={inView ? "visible" : "hidden"} 
-      className='flex flex-col justify-start items-center w-full h-full gap-2 '
+      className='flex flex-col justify-center items-center w-full h-full gap-2 '
     >
         {/* first row */}
         <div className=' flex justify-between items-center gap-2'>
