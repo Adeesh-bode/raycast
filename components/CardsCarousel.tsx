@@ -176,17 +176,17 @@ export const Card = ({
         layoutId={layout ? `card-${card.title}` : undefined}
         className="rounded-3xl bg-gray-100 dark:bg-neutral-900 h-80 w-56 md:h-[36rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10"
       >
-        <div className="h-full px-3 py-4 flex flex-col ">
-          <div className="flex flex-col w-full seperate">
-            <div className="w-full seperate gap-2" >
+        <div className="h-full px-7 py-6 flex flex-col gap-5 text-xl  border-b-1  border-white ">
+          <div className="seperate w-full ">
+            <div className="w-full flex justify-start gap-4" >
               <Image src={ card.iconsrc } width={30} height={30} alt='card.title' />
               <span>{ card.title }</span>
             </div>
-            <div className="h-full p-2 bg-neutral-600/35 " >
+            <div className="h-full p-2 bg-neutral-600/35 border border-gray-400  rounded-lg " >
               <RiArrowRightSLine />
             </div>
           </div>
-          <div className=" text-left">
+          <div className=" text-left text-base">
             { card.description }
           </div>
         </div> 
