@@ -28,6 +28,7 @@ type Card = {
   title: string;
   redirecturl: string;
   description: string;
+  color:string;
 };
 
 export const CarouselContext = createContext<{
@@ -174,7 +175,7 @@ export const Card = ({
     <>
       <motion.button
         layoutId={layout ? `card-${card.title}` : undefined}
-        className="rounded-3xl bg-gray-100 dark:bg-neutral-900 h-80 w-56 md:h-[36rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10"
+        className={ `rounded-3xl ${card.color} h-80 w-56 md:h-[36rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10`}
       >
         <div className="h-full px-7 py-6 flex flex-col gap-5 text-xl border-b  border-gray-700  ">
           

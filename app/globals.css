@@ -57,3 +57,28 @@ body {
   /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
   box-shadow: 0px 0px 25px 10px rgba(255, 255, 255 , 0.15);
 }
+
+/* gradient colors */
+.green-shade {
+  background: radial-gradient(circle, rgba(145,196,166,1) 0%, rgba(33,129,67,1) 25%, rgba(13,49,26,1) 100%);
+}
+
+.blue-shade {
+  background: radial-gradient(circle, rgba(88,112,153,1) 0%, rgba(31,57,103,1) 25%, rgba(19,37,69,1) 100%);
+}
+
+.purple-shade {
+  background: radial-gradient(circle, rgba(62,66,125,1) 0%, rgba(34,37,83,1) 25%, rgba(16,18,47,1) 100%);
+}
+
+.dark-green-shade {
+  background: radial-gradient(circle, rgba(78,145,153,1) 0%, rgba(28,109,119,1) 25%, rgba(5,30,35,1) 100%);
+}
+
+.violet-shade {
+  background: radial-gradient(circle, rgba(81,81,140,1) 0%, rgba(41,41,120,1) 25%, rgba(15,23,70,1) 100%);
+}
+
+.dark-blue-shade {
+  background: radial-gradient(circle, rgba(49,96,147,1) 0%, rgba(21,56,93,1) 25%, rgba(6,9,17,1) 100%);
+}
