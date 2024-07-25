@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/ui/Navbar";
 import Head from 'next/head';
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,8 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <title>Raycast</title>
-        <link rel="shortcut icon" href={'/favicon.png'} sizes="16x16" />
+        <Link rel="icon" type="image/x-icon" href={'/favicon.ico'}  />
       </Head>
       <body className={inter.className}>
         <Navbar />
