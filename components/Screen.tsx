@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import ScreenNavbar from "./ScreenNavbar"
 import Switch from "./Switch";
-import { SparklesCore } from "./ui/sparkles";
+import { SparklesCore } from "./ui/Sparkles";
 import Window from "./Window";
 
 
