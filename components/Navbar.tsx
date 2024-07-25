@@ -12,7 +12,7 @@ const Navbar = () => {
         <div 
         className="bg-[#131313] flex justify-between items-center gap-40 px-7 py-5 mx-0 rounded-xl border border-y-2 border-neutral-800  border-l-1 border-r-1 ">
         <div className="flex justify-between items-center gap-2">
-            <Image src={logo} width={30} height={30} alt="raycast logo" />
+            <Image src={logo} width={50} height={50} alt="raycast logo" />
             <span>Raycast</span>
         </div>
 
