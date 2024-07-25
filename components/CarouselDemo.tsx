@@ -3,7 +3,11 @@ import Image from "next/image";
 import React from "react";
 import { Carousel, Card } from "./CardsCarousel";
 
-export function CarouselDemo() {
+interface CarouselDemoProps {
+  extension: string; 
+}
+
+export const  CarouselDemo : React.FC<CarouselDemoProps> = ({ extension }) => {
   const cards = data.map((card, index) => (
     <Card key={card.bgimgsrc} card={card} index={index} />
   ));
@@ -16,8 +20,8 @@ export function CarouselDemo() {
 }
 
 
-
 const data = [
+  
   {
     iconsrc: '/linearicon.webp',
     bgimgsrc: '/linearbg.webp',

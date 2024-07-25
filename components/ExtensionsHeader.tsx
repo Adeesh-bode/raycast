@@ -2,13 +2,15 @@
 
 import { useState } from 'react';
 
-const ExtensionOptions = ['Productivity', 'Engineering', 'Design', 'Writing'];
+interface ExtensionsHeaderProps {
+  extension: string; 
+  selectExtension: React.Dispatch<React.SetStateAction<string>>; // is set function of useState which contains string
+}
 
-const ExtensionsHeader = () => {
-  const [active, setActive] = useState('Productivity');
-
+const ExtensionsHeader: React.FC<ExtensionsHeaderProps> = ({ extension, selectExtension }) => {
+  const ExtensionOptions = ['Productivity', 'Engineering', 'Design', 'Writing'];
   const handleChange = (extension: string) => {
-    setActive(extension);
+    selectExtension(extension);
   };
 
   return (
@@ -27,7 +29,7 @@ const ExtensionsHeader = () => {
             key={option}
             onClick={() => handleChange(option)}
             className={`py-2 px-3 rounded-full  hover:text-white inline-flex h-12 items-center justify-center font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 ${
-              option === active
+              option === extension
                 ? 'bg-[linear-gradient(110deg,#111010,10%,#a8a5a5,55%,#000103)] bg-[length:200%_100%] animate-shimmer border border-neutral-600'
                 : 'text-slate-400'
             }`}

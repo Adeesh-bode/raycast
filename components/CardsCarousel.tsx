@@ -173,7 +173,7 @@ export const Card = ({
     <>
       <motion.button
         layoutId={layout ? `card-${card.title}` : undefined}
-        className={ `rounded-3xl ${card.color} h-80 w-56 md:h-[32rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10`}
+        className={ `rounded-3xl ${card.color}  h-80 w-56 md:h-[36rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10`}
       >
         <div className="h-full px-7 py-6 flex flex-col gap-5 text-xl border-b  border-gray-700  ">
           
@@ -195,7 +195,7 @@ export const Card = ({
         <div className="w-full h-full flex-center " >
           <Image src={card.bgimgsrc} height={150} layout="responsive" width={150} alt={`background image of ${card.title}`}  />
         </div>
-                
+
       </motion.button>
     </>
   );
