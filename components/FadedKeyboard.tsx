@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { BiArrowToRight } from "react-icons/bi";
 import { LuClock } from "react-icons/lu";
@@ -6,18 +7,26 @@ import { PiBugBeetle } from "react-icons/pi";
 import { AiOutlineApple } from "react-icons/ai";
 import { TbArrowBigUpLine } from "react-icons/tb";
 
+import { motion } from 'framer-motion';
+import {container , show } from '../lib/animation';
+
 const FadedKeyboard = () => {
   return (
-    <div className='flex flex-col justify-start items-center w-full h-full gap-2 '>
+    <motion.div  
+    variants={container} 
+    initial="hidden" 
+    animate="visible"
+    className='flex flex-col justify-start items-center w-full h-full gap-2 '
+    >
         {/* first row */}
         <div className=' flex justify-between items-center gap-2'>
-            <div className='opacity-10 flex justify-start items-end p-2 border-2  border-neutral-600 bg-neutral-950  rounded-md w-36 h-16 '>
+            <div className='opacity-5 flex justify-start items-end p-2 border-2  border-neutral-600 bg-neutral-950  rounded-md w-36 h-16 '>
                 esc
             </div>
-            <div className='opacity-15 flex justify-start items-end p-2 border-2 border-neutral-600 bg-neutral-950 rounded-md w-16 h-16'>
+            <div className='opacity-10 flex justify-start items-end p-2 border-2 border-neutral-600 bg-neutral-950 rounded-md w-16 h-16'>
                 F1
             </div>
-            <div className='opacity-15 flex justify-start items-end p-2 border-2 border-neutral-600 bg-neutral-950 rounded-md w-16 h-16'>
+            <div className='opacity-10 flex justify-start items-end p-2 border-2 border-neutral-600 bg-neutral-950 rounded-md w-16 h-16'>
                 F2
             </div>
             <div className='opacity-5  flex justify-start items-end p-2 border-2 border-neutral-600 bg-neutral-950 rounded-md w-16 h-16'>
@@ -27,7 +36,7 @@ const FadedKeyboard = () => {
         
         {/* second row */}
         <div className=' flex justify-between items-center gap-2 text-xl'>
-            <div className='opacity-25 flex flex-col justify-center items-center border-2 border-neutral-600 bg-neutral-950 rounded-md w-20 h-[90px]'>
+            <div className='opacity-15 flex flex-col justify-center items-center border-2 border-neutral-600 bg-neutral-950 rounded-md w-20 h-[90px]'>
                 <div className=' text-center' >+</div>
                 <div className=' text-center align-top flex flex-col justify-start ' >§</div>
             </div>
@@ -54,36 +63,36 @@ const FadedKeyboard = () => {
             <div className='opacity-25 flex justify-start items-end p-2 border-2  border-neutral-600 bg-neutral-950  rounded-md w-36 h-24 '>
                 <BiArrowToRight className='text-neutral-500' />
             </div>
-            <div className='flex flex-col justify-between items-start p-2 border-2  border-neutral-600 bg-neutral-950  rounded-md w-36 h-24 '>
+            <motion.div variants={show} className='flex flex-col justify-between items-start p-2 border-2  border-neutral-600 bg-neutral-950  rounded-md w-36 h-24 '>
                 <LuClock className='text-neutral-500' />
                 <div className='text-sm text-neutral-700 '>
                     <span className='text-white'>Think. </span> {' '}Think in Milliseconds.
                 </div>
-            </div>
-            <div className='flex flex-col justify-between items-start p-2 border-2  border-neutral-600 bg-neutral-950  rounded-md w-40 h-24 '>
+            </motion.div>
+            <motion.div variants={show} className='flex flex-col justify-between items-start p-2 border-2  border-neutral-600 bg-neutral-950  rounded-md w-40 h-24 '>
                 <MdKeyboardCommandKey className='text-neutral-500' />
                 <div className='text-sm text-neutral-700 '>
                     <span className='text-white'>Ergonomic. </span> {' '}Keyboard First.
                 </div>
-            </div>
+            </motion.div>
             
         </div>
         
         {/* Fourth row */}
         <div className=' flex justify-between items-center gap-2 text-2xl'>
             
-            <div className='flex flex-col justify-between items-start p-2 border-2  border-neutral-600 bg-neutral-950  rounded-md w-36 h-24 '>
+            <motion.div variants={show} className='flex flex-col justify-between items-start p-2 border-2  border-neutral-600 bg-neutral-950  rounded-md w-36 h-24 '>
                 <AiOutlineApple className='text-neutral-500' />
                 <div className='text-sm text-neutral-700 '>
                     <span className='text-white'>Native. </span> {' '}Pure Performance.
                 </div>
-            </div>
-            <div className='flex flex-col justify-between items-start p-2 border-2  border-neutral-600 bg-neutral-950  rounded-md w-40 h-24 '>
+            </motion.div>
+            <motion.div variants={show} className='flex flex-col justify-between items-start p-2 border-2  border-neutral-600 bg-neutral-950  rounded-md w-40 h-24 '>
                 <PiBugBeetle className='text-neutral-500' />
                 <div className='text-sm text-neutral-700 '>
                     <span className='text-white'>Reliable. </span> {' '}99.8% crash-free rate.
                 </div>
-            </div>
+            </motion.div>
             <div className='opacity-15 flex-center border-2 border-neutral-600 bg-neutral-950 rounded-md w-24 h-24'>
                 <div className=' text-center' >S</div>
             </div>
@@ -111,7 +120,7 @@ const FadedKeyboard = () => {
 
 
 
-    </div>
+    </motion.div>
   )
 }
 
