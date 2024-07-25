@@ -11,7 +11,7 @@ import { FaBatteryFull } from "react-icons/fa6";
 
 const ScreenNavbar = () => {
   return (
-    <div className="w-full h-fit flex justify-between items-center text-xs p-2 ">
+    <div className="w-full h-fit flex justify-between items-center text-sm font-semibold px-5 py-4  text-neutral-500">
         <div className="flex items-center justify-start gap-7">
         <div className="flex justify-between items-center gap-3 ">
             <AiFillApple size={20} />
