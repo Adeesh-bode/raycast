@@ -83,16 +83,16 @@ body {
   background: radial-gradient(circle, rgba(49,96,147,1) 0%, rgba(21,56,93,1) 25%, rgba(6,9,17,1) 100%);
 }
 
-/* .red-bg { 
+.red-bg { 
   background-image: url('/redbackground.webp');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  backdrop-filter: blur(25px);
-} */
+  /* backdrop-filter: blur(25px); */
+}
 
  /* for transformation */
-.red-bg {
+/* .red-bg {
   position: relative;
   overflow: hidden;
 }
@@ -111,4 +111,4 @@ body {
   transform: rotate(90deg); 
   transform-origin: center;
   z-index: -1; 
-}
+} */
