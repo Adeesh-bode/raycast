@@ -1,5 +1,4 @@
 import Screen from "./Screen";
-import { SparklesCore } from "./ui/sparkles";
 
 const ScreenDemo = () => {
   return (
