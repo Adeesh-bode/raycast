@@ -176,56 +176,29 @@ export const Card = ({
         layoutId={layout ? `card-${card.title}` : undefined}
         className="rounded-3xl bg-gray-100 dark:bg-neutral-900 h-80 w-56 md:h-[36rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10"
       >
-        <div className="h-full px-7 py-6 flex flex-col gap-5 text-xl  border-b-1  border-white ">
+        <div className="h-full px-7 py-6 flex flex-col gap-5 text-xl border-b  border-gray-700  ">
+          
           <div className="seperate w-full ">
-            <div className="w-full flex justify-start gap-4" >
-              <Image src={ card.iconsrc } width={30} height={30} alt='card.title' />
+            <div className="w-full flex justify-start items-center gap-4" >
+              <Image src={ card.iconsrc } width={50} height={50} alt='card.title' />
               <span>{ card.title }</span>
             </div>
-            <div className="h-full p-2 bg-neutral-600/35 border border-gray-400  rounded-lg " >
+            <div className=" p-2 bg-neutral-600/35 border border-gray-400  rounded-lg " >
               <RiArrowRightSLine />
             </div>
           </div>
+
           <div className=" text-left text-base">
             { card.description }
           </div>
+
         </div> 
-        <BlurImage
-          src={card.bgimgsrc}
-          alt={card.title}
-          fill
-          className="object-cover h-full inset-0"
-        />
+        <div className="w-full h-full flex-center " >
+          <Image src={card.bgimgsrc} height={150} layout="responsive" width={150} alt={`background image of ${card.title}`}  />
+        </div>
+        
       </motion.button>
     </>
   );
 };
 
-export const BlurImage = ({
-  height,
-  width,
-  src,
-  className,
-  alt,
-  ...rest
-}: ImageProps) => {
-  const [isLoading, setLoading] = useState(true);
-  return (
-    <Image
-      className={cn(
-        "transition duration-300",
-        isLoading ? "blur-sm" : "blur-0",
-        className
-      )}
-      onLoad={() => setLoading(false)}
-      src={src}
-      width={width}
-      height={height}
-      loading="lazy"
-      decoding="async"
-      blurDataURL={typeof src === "string" ? src : undefined}
-      alt={alt ? alt : "Background of a beautiful view"}
-      {...rest}
-    />
-  );
-};
