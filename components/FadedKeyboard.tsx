@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React from 'react';
 import { BiArrowToRight } from "react-icons/bi";
 import { LuClock } from "react-icons/lu";
 import { MdKeyboardCommandKey } from "react-icons/md";
@@ -7,16 +7,24 @@ import { PiBugBeetle } from "react-icons/pi";
 import { AiOutlineApple } from "react-icons/ai";
 import { TbArrowBigUpLine } from "react-icons/tb";
 
-import { motion } from 'framer-motion';
-import {container , show } from '../lib/animation';
+import { motion} from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+
+import { container, show } from '../lib/animation';
 
 const FadedKeyboard = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: false, // Animation triggers only once
+    threshold: 0.6, // Trigger when 60% in view
+  });
+
   return (
     <motion.div  
-    variants={container} 
-    initial="hidden" 
-    animate="visible"
-    className='flex flex-col justify-start items-center w-full h-full gap-2 '
+      ref={ref} // Attach ref for intersection
+      variants={container} 
+      initial="hidden" 
+      animate={inView ? "visible" : "hidden"} 
+      className='flex flex-col justify-start items-center w-full h-full gap-2 '
     >
         {/* first row */}
         <div className=' flex justify-between items-center gap-2'>
@@ -63,13 +71,21 @@ const FadedKeyboard = () => {
             <div className='opacity-25 flex justify-start items-end p-2 border-2  border-neutral-600 bg-neutral-950  rounded-md w-36 h-24 '>
                 <BiArrowToRight className='text-neutral-500' />
             </div>
-            <motion.div variants={show} className='flex flex-col justify-between items-start p-2 border-2  border-neutral-600 bg-neutral-950  rounded-md w-36 h-24 '>
+            <motion.div 
+              variants={show} 
+              className='flex flex-col justify-between items-start p-2 border-2  border-neutral-600 bg-neutral-950  rounded-md w-36 h-24 '
+              
+            >
                 <LuClock className='text-neutral-500' />
                 <div className='text-sm text-neutral-700 '>
                     <span className='text-white'>Think. </span> {' '}Think in Milliseconds.
                 </div>
             </motion.div>
-            <motion.div variants={show} className='flex flex-col justify-between items-start p-2 border-2  border-neutral-600 bg-neutral-950  rounded-md w-40 h-24 '>
+            <motion.div 
+              variants={show} 
+              className='flex flex-col justify-between items-start p-2 border-2  border-neutral-600 bg-neutral-950  rounded-md w-40 h-24 '
+              
+            >
                 <MdKeyboardCommandKey className='text-neutral-500' />
                 <div className='text-sm text-neutral-700 '>
                     <span className='text-white'>Ergonomic. </span> {' '}Keyboard First.
@@ -81,13 +97,21 @@ const FadedKeyboard = () => {
         {/* Fourth row */}
         <div className=' flex justify-between items-center gap-2 text-2xl'>
             
-            <motion.div variants={show} className='flex flex-col justify-between items-start p-2 border-2  border-neutral-600 bg-neutral-950  rounded-md w-36 h-24 '>
+            <motion.div 
+              variants={show} 
+              className='flex flex-col justify-between items-start p-2 border-2  border-neutral-600 bg-neutral-950  rounded-md w-36 h-24 '
+              
+            >
                 <AiOutlineApple className='text-neutral-500' />
                 <div className='text-sm text-neutral-700 '>
                     <span className='text-white'>Native. </span> {' '}Pure Performance.
                 </div>
             </motion.div>
-            <motion.div variants={show} className='flex flex-col justify-between items-start p-2 border-2  border-neutral-600 bg-neutral-950  rounded-md w-40 h-24 '>
+            <motion.div 
+              variants={show} 
+              className='flex flex-col justify-between items-start p-2 border-2  border-neutral-600 bg-neutral-950  rounded-md w-40 h-24 '
+             
+            >
                 <PiBugBeetle className='text-neutral-500' />
                 <div className='text-sm text-neutral-700 '>
                     <span className='text-white'>Reliable. </span> {' '}99.8% crash-free rate.
@@ -117,11 +141,8 @@ const FadedKeyboard = () => {
                 <div className=' text-center' >C</div>
             </div>
         </div>
-
-
-
     </motion.div>
-  )
-}
+  );
+};
 
-export default FadedKeyboard
+export default FadedKeyboard;
