@@ -1,11 +1,11 @@
 'use client'
-import DownloadButton from './DownloadButton'
+import DownloadButton from '../ui/DownloadButton'
 import { motion } from 'framer-motion';
-import {container , item } from '../lib/animation';
+import {container , item } from '../../lib/animation';
 
 // import { Button } from '@components/ui/Moving-border.tsx';
 import { FaArrowRight } from "react-icons/fa6";
-import { Button } from './ui/Moving-border';
+import { Button } from '../ui/Moving-border';
 
 
 const Hero = () => {

@@ -1,4 +1,4 @@
-import DownloadButton from "./DownloadButton"
+import DownloadButton from "../ui/DownloadButton"
 import FadedKeyboard from "./FadedKeyboard"
 
 export const WhyRaycast = () => {

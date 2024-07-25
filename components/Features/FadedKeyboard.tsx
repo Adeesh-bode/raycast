@@ -10,7 +10,7 @@ import { TbArrowBigUpLine } from "react-icons/tb";
 import { motion} from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-import { container, show } from '../lib/animation';
+import { container, show } from '../../lib/animation';
 
 const FadedKeyboard = () => {
   const [ref, inView] = useInView({

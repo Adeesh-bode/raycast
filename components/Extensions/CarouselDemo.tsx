@@ -5,7 +5,7 @@ interface CarouselDemoProps {
   extension: string; 
 }
 
-import { data } from '../constants/carousel';
+import { data } from '../../constants/carousel';
 
 export const  CarouselDemo : React.FC<CarouselDemoProps> = ({ extension }) => {  
   const cards   = data[extension]?.map((card, index) => (
