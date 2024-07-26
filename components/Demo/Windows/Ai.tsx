@@ -6,10 +6,41 @@ const Ai = () => {
         <div className="w-full px-5 py-3 text-white border-b-2 border-gray-600  " >
             <ReactTyped strings={["Which note taking app support markdown?"]} typeSpeed={150} loop />
         </div>
-        <div className='w-full h-full p-3 '>
-            <div className="size-full bg-gray-500/25 p-3" >
-                
+        <div className='w-full bg-gray-500/35 h-full rounded-md p-5 flex flex-col justify-start  gap-4 text-base mt-1 '>
+            <div className="w-full  " >
+              Several note-taking apps support Markdown for formatting text. Here are some popular ones:
             </div>
+            
+            <div>
+              <h2>Markdown Editors and Tools</h2>
+              <ol>
+                <li>Obsidian - Local folder-based Markdown knowledge base.</li>
+                <li>Notion - Hybrid workspace with Markdown support.</li>
+                <li>Typora - Minimal editor with live Markdown preview.</li>
+                <li>Bear - Markdown writing app for Mac and iOS.</li>
+                <li>Joplin - Open-source, notebook-organized Markdown notes.</li>
+                <li>Zettir - Markdown editor for researchers with citation support.</li>
+                <li>Boost Note - Developer-focused Markdown editor with code highlighting.</li>
+              </ol>
+            </div>
+
+            <div className="w-full text-neutral-300 " >
+              References
+            </div>
+            <div className='flex justify-start items-center gap-2'>
+            <div className="seperate" >
+                <span className="p-2 bg-gray-200/25 text-center" >1</span>
+                <span className="py-2 px-3 bg-gray-300/25 text-center" >Notion</span>
+            </div>
+            <div className="seperate" >
+                <span className="p-2 bg-gray-200/25 text-center" >2</span>
+                <span className="py-2 px-3 bg-gray-300/25 text-center" >Obsidian</span>
+            </div>
+            <div className="seperate" >
+                <span className="p-2 bg-gray-200/25   text-center" >3</span>
+                <span className="py-2 px-3 bg-gray-300/25  text-center" >+10 more</span>
+            </div>
+          </div>
         </div>
     </div>
   )
