@@ -180,12 +180,12 @@ export const Card = ({
     <>
       <motion.button
         layoutId={layout ? `card-${card.title}` : undefined}
-        className={ `rounded-3xl ${card.color}  h-80 w-56 md:h-[36rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10`}
+        className={ `rounded-xl md:rounded-3xl ${card.color}  h-84 w-60 md:h-[36rem] md:w-96 overflow-hidden flex flex-col items-start justify-between  `}
       >
-        <div className="h-full px-7 py-6 flex flex-col gap-5 text-xl border-b  border-gray-700  ">
+        <div className="h-full px-3 py-2 md:px-7 md:py-6 flex flex-col justify-between gap-3 md:gap-5 md:text-xl border-b  border-gray-700  ">
           
           <div className="seperate w-full ">
-            <div className="w-full flex justify-start items-center gap-4" >
+            <div className="w-full flex justify-start items-center gap-2 md:gap-4" >
               <Image src={ card.iconsrc } width={50} height={50} alt='card.title' />
               <span>{ card.title }</span>
             </div>
@@ -194,7 +194,7 @@ export const Card = ({
             </div>
           </div>
 
-          <div className=" text-left text-base">
+          <div className=" text-left text-sm md:text-base">
             { card.description }
           </div>
 

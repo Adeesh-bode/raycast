@@ -15,17 +15,17 @@ const Hero = () => {
         variants={container} 
         initial="hidden" 
         animate="visible"  
-        className='w-1/2 flex flex-col items-center gap-9 mt-64'
+        className='w-4/5 md:w-1/2 flex flex-col items-center gap-9 mt-36 md:mt-64'
       >
         <motion.h1 
-          className='text-6xl text-center font-medium' 
+          className='text-3xl md:text-6xl text-center font-medium' 
           variants={item} 
           
         >
           Your shortcut to everything.
         </motion.h1>
         <motion.h2 
-          className='text-xl text-center' 
+          className=' md:text-xl text-center' 
           variants={item} 
         >
           A collection of powerful productivity tools all within an extendable launcher. Fast, ergonomic and reliable.

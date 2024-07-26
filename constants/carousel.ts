@@ -41,7 +41,7 @@ export const data : Data = {
         bgimgsrc: '/arcbg.webp',
         title: 'Arc',
         redirecturl: '/',
-        description: "navigate your Arc browser&apos;s history and open tabs. You can open recent tabs in Arc or Little Arc as well as copy websites",
+        description: "navigate your Arc browser history and open tab. Little Arc as well as copy websites",
         color: 'violet-shade',
       },
       {
@@ -133,7 +133,7 @@ export const data : Data = {
         bgimgsrc: '/arcbg.webp',
         title: 'Arc',
         redirecturl: '/',
-        description: "navigate your Arc browser&apos;s history and open tabs. You can open recent tabs in Arc or Little Arc as well as copy websites",
+        description: "navigate your Arc browser history and open tabs. Little Arc as well as copy websites",
         color: 'violet-shade',
       },
       {
@@ -215,7 +215,7 @@ export const data : Data = {
         bgimgsrc: '/arcbg.webp',
         title: 'Arc',
         redirecturl: '/',
-        description: "navigate your Arc browser&apos;s history and open tabs. You can open recent tabs in Arc or Little Arc as well as copy websites",
+        description: "navigate your Arc browser's history and open tabs. Little Arc as well as copy websites",
         color: 'violet-shade',
       },
       {
