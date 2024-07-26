@@ -35,7 +35,7 @@ const Screen = () => {
           particleColor="#FFFFFF"
         />
       </div>
-      <div className="w- z-10 p-[4px] bg-neutral-600 rounded-md screen-shadow ">
+      <div className="w-11/12 z-10 p-[4px] bg-neutral-600 rounded-md screen-shadow ">
         <div className="w-full h-screen bg-black rounded-md flex flex-col justify-start overflow-auto " >
           <ScreenNavbar />
           <Window currentWindow={selectedWindow} />
