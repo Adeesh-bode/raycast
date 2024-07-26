@@ -10,7 +10,7 @@ import { Button } from '../ui/Moving-border';
 
 const Hero = () => {
   return (
-    <div className='w-full  flex flex-col justify-end items-center  mt-7 gap-48  '>  {/* red-bg  */}
+    <div className='w-full  flex flex-col justify-end items-center  mt-7 gap-32 md:gap-48  '>  {/* red-bg  */}
         <motion.div 
         variants={container} 
         initial="hidden" 

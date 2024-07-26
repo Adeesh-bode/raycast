@@ -15,16 +15,16 @@ const ExtensionsHeader: React.FC<ExtensionsHeaderProps> = ({ extension, selectEx
   };
 
   return (
-    <div className="w-full md:w-4/5 flex flex-col  md:flex-row  justify-between items-start cursor-pointer gap-5  ">
+    <div className="w-full md:w-4/5 flex flex-col  md:flex-row  justify-between items-start cursor-pointer gap-5 px-7 ">
       
-      <div className="w-full md:w-1/3 flex flex-col justify-start items-start gap-3 px-7 text-left text-xl">
+      <div className="w-full md:w-1/3 flex flex-col justify-start items-start gap-3  text-left text-xl">
         <div>There&apos;s an extension for that.</div>
         <div className="text-neutral-700">
           Use your favorite tools without even opening them.
         </div>
       </div>
 
-      <div className="w-fit md:w-fit separate p-1 md:px-2 md:py-2 gap-1 md:gap-3 rounded-full border border-neutral-600 flex">
+      <div className="w-fit md:w-fit separate p-2 md:px-2 md:py-2 gap-1 md:gap-3 rounded-full border border-neutral-600 flex">
         {ExtensionOptions.map((option) => (
           <span
             key={option}

@@ -1,23 +1,26 @@
-'use client'
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import ScreenNavbar from "./ScreenNavbar"
 import Switch from "./Switch";
 import { SparklesCore } from "../ui/Sparkles";
 import Window from "./Window";
 
+interface screenProps {
+  windows : string[];
+  selectedWindow : string;
+  setSelectedWindow : React.Dispatch<React.SetStateAction<string>>;
+}
 
-const Screen = () => {
-  const windows : string[] = [ 'clipboard' , 'ai' , 'emoji' , 'calculator' , 'management']
-  const [ selectedWindow , setSelectedWindow ] = useState<string>( windows[1] );
+const Screen : React.FC<screenProps> = ({ windows , selectedWindow , setSelectedWindow}) => {
+  
 
-  useEffect(() => {
+  useEffect( () => {
     const interval = setInterval(() => {
       setSelectedWindow((prevSelectedWindow) => {
         const currentIndex = windows.indexOf(prevSelectedWindow);
         const nextIndex = (currentIndex + 1) % windows.length;
         return windows[nextIndex];
       });
-    }, 8000);
+    }, 6000);
 
     return () => clearInterval(interval);
   }, []);

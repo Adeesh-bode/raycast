@@ -13,7 +13,7 @@ export const  CarouselDemo : React.FC<CarouselDemoProps> = ({ extension }) => {
   ));
 
   return (
-    <div className="w-full h-full py-20">
+    <div className="w-full h-full py-8">
       <Carousel key={extension} items={cards} />
     </div>
   );

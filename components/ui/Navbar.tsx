@@ -14,15 +14,15 @@ const Navbar = () => {
     const [showLink, setShowLink] = useState(true);
 
     return (
-        <div className="  sticky top-6 z-50 w-full h-20  flex flex-col gap-2  md:flex-center">
-            <div className="bg-[#131313]/90 flex flex-col justify-between gap-2 mx-5 md:mx-32 rounded-xl border border-y-2 border-neutral-800 border-l-1 border-r-1">
+        <div className="  sticky top-6 z-50 w-full h-20  flex flex-col gap-2  md:flex-center  ">
+            <div className="bg-[#131313]/90 flex flex-col justify-between gap-2 mx-5 md:mx-32 rounded-xl  border border-y-2 border-neutral-800 border-l-1 border-r-1">
                 <div className="flex justify-between items-center  px-3 py-2 md:px-5 md:py-3 ">
 
                 <div className="flex justify-between items-center">
                     <Image src={logo} width={50} height={50} alt="raycast logo" />
                     <span>Raycast</span>
                 </div>
-                <nav className="justify-between gap-8  hidden md:flex  ">
+                <nav className="justify-between gap-8  hidden md:flex ">
                     {NavLinks.map(({ label, route }) => (
                         <Link key={label} href={route} className="text-gray-400 hover:text-white text-sm font-semibold">
                             {label}
@@ -48,15 +48,15 @@ const Navbar = () => {
             </div>
             {
                 !showLink &&
-                <div className="flex flex-col justify-start gap-4 bg-neutral-900/25 px-5 " >
-                <nav className=" flex flex-col justify-between gap-2 bg-neutral-900/25 border-b-2 border-gray-600 mb-4 ">
+                <div className="flex flex-col justify-start gap-4 px-5 " >
+                <nav className=" flex flex-col justify-between gap-2  border-b-2 border-gray-600 pb-4 ">
                 {NavLinks.map(({ label, route }) => (
                     <Link key={label} href={route} className="text-gray-400 hover:text-white text-sm font-semibold">
                         {label}
                     </Link>
                 ))}
                 </nav>
-                <div className="text-left text-gray-400 hover:text-white text-sm font-semibold">
+                <div className="text-left text-gray-400 hover:text-white text-sm font-semibold pb-3">
                     Login
                 </div>
                 </div>

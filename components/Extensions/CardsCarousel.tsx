@@ -194,7 +194,7 @@ export const Card = ({
             </div>
           </div>
 
-          <div className=" text-left text-sm md:text-base">
+          <div className=" text-left text-sm md:text-base h-16">
             { card.description }
           </div>
 
