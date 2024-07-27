@@ -3,7 +3,6 @@ import { IconArrowRight } from "@tabler/icons-react";
 import { CiSettings } from "react-icons/ci";
 import { BiSearch } from "react-icons/bi";
 
-
 const Calculator = () => {
   return (
     <div className="size-full flex flex-col justify-start items-center  " >
