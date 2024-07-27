@@ -2,7 +2,7 @@ import { ReactTyped } from "react-typed";
 
 const Ai = () => {
   return (
-    <div className="size-full flex flex-col justify-start items-center gap-2 p-1 pb-[10px]" >
+    <div className="size-full flex flex-col justify-start items-center gap-2 p-1 pb-[24px]" >
         <div className="w-full  px-2 text-white border-b-2 border-gray-600  " >
             <ReactTyped strings={["Which note taking app support markdown?"]} typeSpeed={150} loop />
         </div>
