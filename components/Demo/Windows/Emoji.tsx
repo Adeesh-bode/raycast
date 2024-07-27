@@ -12,7 +12,7 @@ const Emoji = () => {
 
   return (
     <div className="size-full flex flex-col justify-start items-center " >
-        <div className="w-full px-5 py-1 text-white border-b-2 border-gray-600  " >
+        <div className="w-full px-5 py-1 text-white border-b-2 border-neutral-500  " >
           <ReactTyped strings={["Search Emoji & Symbols..."]} typeSpeed={150} loop />
         </div>
         <div className='w-full p-3 flex flex-col justify-start  '>
