@@ -2,11 +2,12 @@ import { ReactTyped } from "react-typed";
 
 const Ai = () => {
   return (
-    <div className="size-full flex flex-col justify-start items-center " >
-        <div className="w-full px-5 py-3 text-white border-b-2 border-gray-600  " >
+    <div className="size-full flex flex-col justify-start items-center gap-2 p-1" >
+        <div className="w-full py-1 px-2 text-white border-b-2 border-gray-600  " >
             <ReactTyped strings={["Which note taking app support markdown?"]} typeSpeed={150} loop />
         </div>
-        <div className='w-full bg-gray-500/35 h-full rounded-md p-5 flex flex-col justify-start  gap-4 text-base mt-1 '>
+        <div className='w-full bg-gray-500/35 h-full rounded-md py-1 px-3 flex flex-col justify-start  gap-4 text-base mt-1 '>
+            
             <div className="w-full  " >
               Several note-taking apps support Markdown for formatting text. Here are some popular ones:
             </div>
@@ -24,10 +25,12 @@ const Ai = () => {
               </ol>
             </div>
 
-            <div className="w-full text-neutral-300 " >
+            <div className="w-full text-neutral-300 " > 
               References
             </div>
+            
             <div className='flex justify-start items-center gap-2'>
+            
             <div className="seperate" >
                 <span className="p-2 bg-gray-200/25 text-center" >1</span>
                 <span className="py-2 px-3 bg-gray-300/25 text-center" >Notion</span>
@@ -40,6 +43,7 @@ const Ai = () => {
                 <span className="p-2 bg-gray-200/25   text-center" >3</span>
                 <span className="py-2 px-3 bg-gray-300/25  text-center" >+10 more</span>
             </div>
+          
           </div>
         </div>
     </div>

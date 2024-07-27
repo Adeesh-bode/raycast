@@ -10,7 +10,7 @@ const nextConfig = {
   
     // Enabling Image Optimization
     images: {
-      domains: ['images.unsplash.com'], // Add your domains here
+      domains: ['img.icons8.com'], // Add your domains here
     },
   
     // Custom Webpack Configuration
