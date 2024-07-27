@@ -22,7 +22,7 @@ const Switch: React.FC<SwitchProps> = ({ selectWindow }) => { // or can have ass
     };
 
     return (
-        <div className="w-full h-20 md:h-24 md:mb-6 flex-center">
+        <div className="w-full h-20 md:h-24 md:mb-4 flex-center">
             <div className="w-fit h-16 md:h-20 flex-center gap-2 md:gap-2 py-1 md:py-2 px-2 md:px-3 rounded-xl md:rounded-3xl bg-neutral-900/70 border border-neutral-600 overflow-y-visible">
                 {Object.entries(iconMap).map(([key, Icon]) => (
                     <div

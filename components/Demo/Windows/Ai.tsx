@@ -32,16 +32,16 @@ const Ai = () => {
             <div className='flex justify-start items-center gap-2'>
             
             <div className="seperate" >
-                <span className="p-2 bg-gray-200/90 text-center" >1</span>
-                <span className="py-2 px-3 bg-gray-200/25 text-center" >Notion</span>
+                <span className="px-2 py-1 bg-gray-200/90 text-center" >1</span>
+                <span className="py-1 px-3 bg-gray-200/25 text-center" >Notion</span>
             </div>
             <div className="seperate" >
-                <span className="p-2 bg-gray-200/90 text-center" >2</span>
-                <span className="py-2 px-3 bg-gray-200/25 text-center" >Obsidian</span>
+                <span className="px-2 py-1 bg-gray-200/90 text-center" >2</span>
+                <span className="py-1 px-3 bg-gray-200/25 text-center" >Obsidian</span>
             </div>
             <div className="seperate" >
-                <span className="p-2 bg-gray-200/90   text-center" >3</span>
-                <span className="py-2 px-3 bg-gray-200/25  text-center" >+10 more</span>
+                <span className="px-2 py-1 bg-gray-200/90   text-center" >3</span>
+                <span className="py-1 px-3 bg-gray-200/25  text-center" >+10 more</span>
             </div>
           
           </div>

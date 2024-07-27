@@ -10,7 +10,7 @@ interface windowProps {
 
 const Window = ({ currentWindow } : windowProps ) => {
   return (
-    <div className="flex-center w-full h-full red-bg  py-0 ">
+    <div className="flex-center w-full h-full red-bg py-3 ">
         <div className="flex-center w-3/5 p-2 h-full bg-neutral-900/25 border border-neutral-600 rounded-2xl  backdrop-blur-sm " >
           { currentWindow == 'clipboard' && <Clipboard />}
           { currentWindow == 'ai' && <Ai />}
