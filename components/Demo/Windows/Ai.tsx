@@ -3,7 +3,7 @@ import { ReactTyped } from "react-typed";
 const Ai = () => {
   return (
     <div className="size-full flex flex-col justify-start items-center gap-2 p-1" >
-        <div className="w-full py-1 px-2 text-white border-b-2 border-gray-600  " >
+        <div className="w-full  px-2 text-white border-b-2 border-gray-600  " >
             <ReactTyped strings={["Which note taking app support markdown?"]} typeSpeed={150} loop />
         </div>
         <div className='w-full bg-gray-500/35 h-full rounded-md py-1 px-3 flex flex-col justify-start  gap-4 text-base mt-1 '>
@@ -32,16 +32,16 @@ const Ai = () => {
             <div className='flex justify-start items-center gap-2'>
             
             <div className="seperate" >
-                <span className="p-2 bg-gray-200/25 text-center" >1</span>
-                <span className="py-2 px-3 bg-gray-200 text-center" >Notion</span>
+                <span className="p-2 bg-gray-200/90 text-center" >1</span>
+                <span className="py-2 px-3 bg-gray-200/25 text-center" >Notion</span>
             </div>
             <div className="seperate" >
-                <span className="p-2 bg-gray-200/25 text-center" >2</span>
-                <span className="py-2 px-3 bg-gray-200 text-center" >Obsidian</span>
+                <span className="p-2 bg-gray-200/90 text-center" >2</span>
+                <span className="py-2 px-3 bg-gray-200/25 text-center" >Obsidian</span>
             </div>
             <div className="seperate" >
-                <span className="p-2 bg-gray-200/25   text-center" >3</span>
-                <span className="py-2 px-3 bg-gray-200  text-center" >+10 more</span>
+                <span className="p-2 bg-gray-200/90   text-center" >3</span>
+                <span className="py-2 px-3 bg-gray-200/25  text-center" >+10 more</span>
             </div>
           
           </div>
