@@ -2,6 +2,10 @@ import { ReactTyped } from "react-typed"
 import { IconArrowRight } from "@tabler/icons-react";
 import { CiSettings } from "react-icons/ci";
 import { BiSearch } from "react-icons/bi";
+import { IoBookOutline } from "react-icons/io5";
+import { SiDuckduckgo } from "react-icons/si";
+import { FcGoogle } from "react-icons/fc";
+
 
 const Calculator = () => {
   return (
@@ -47,31 +51,31 @@ const Calculator = () => {
                 </div>
                 <div className='w-full flex justify-between items-center' >
                     <div className='flex justify-start items-center gap-3'>
-                        <div className="p-[2px] bg-red-600 rounded flex-center">
-                            <BiSearch />
+                        <div className="p-[2px] bg-orange-700 rounded flex-center">
+                            <IoBookOutline />
                         </div>
-                        <div>Search Files</div>
-                        <div className="text-neutral-400" >File Search</div>
+                        <div>Define Word</div>
+                        <div className="text-neutral-400" >Dictionary</div>
                     </div>
                     <div>Command</div>
                 </div>
                 <div className='w-full flex justify-between items-center' >
                     <div className='flex justify-start items-start gap-3'>
-                        <div className="p-[2px] bg-red-600 rounded flex-center">
-                            <BiSearch />
+                        <div className="p-[2px] bg-white rounded flex-center">
+                            <FcGoogle />
                         </div>
-                        <div>Search Files</div>
-                        <div className="text-neutral-400" >File Search</div>
+                        <div>Search Google</div>
+                        <div className="text-neutral-400" >Google Chrome</div>
                     </div>
                     <div>Command</div>
                 </div>
                 <div className='w-full flex justify-between items-center' >
                     <div className='flex justify-start items-start gap-3'>
-                        <div className="p-[2px] bg-red-600 rounded flex-center">
-                            <BiSearch />
+                        <div className="p-[2px] bg-amber-700 rounded flex-center">
+                            <SiDuckduckgo />
                         </div>
-                        <div>Search Files</div>
-                        <div className="text-neutral-400" >File Search</div>
+                        <div>Search DuckDuckGo</div>
+                        <div className="text-neutral-400" >Google Chrome</div>
                     </div>
                     <div>Command</div>
                 </div>
