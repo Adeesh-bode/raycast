@@ -14,9 +14,9 @@ const Hero = () => {
     videoElement.pause();
   };
   return (
-    <div className='w-full  flex flex-col justify-end items-center  mt-7 gap-32 md:gap-48  '>  {/* red-bg  */}
+    <div className='w-full  flex flex-col justify-end items-center  mt-7 gap-24 md:gap-48  '>  {/* red-bg  */}
         {/* <div className='absolute top-9 inset-0 z-0 overflow-hidden'> */}
-        <div className='absolute -top-20 md:top-0 inset-0 z-0 overflow-hidden'>
+        <div className='absolute -top-32 md:top-0 inset-0 z-0 overflow-hidden'>
         <video 
           src='/Effective.mp4' 
           autoPlay 
@@ -31,7 +31,7 @@ const Hero = () => {
         variants={container} 
         initial="hidden" 
         animate="visible"  
-        className='w-4/5 md:w-1/2 flex flex-col items-center gap-9 mt-44 md:mt-72 relative z-10'
+        className='w-4/5 md:w-1/2 flex flex-col items-center gap-9 mt-64 md:mt-72 relative z-10'
       >
         <motion.h1 
           className='text-3xl md:text-6xl text-center font-medium ' 
