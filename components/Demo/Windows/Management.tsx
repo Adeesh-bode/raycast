@@ -8,7 +8,7 @@ const Management = () => {
         </div>
         <div className='w-full h-full p-3 text-base'>
             <span className="text-neutral-300" >Results</span>
-            <div className="w-full hover:bg-gray-500/25  " >
+            <div className="w-full " >
                 
                 <div className="w-full hover:bg-gray-500/25 p-2 flex justify-start items-center gap-2 " >
                     <span className="w-7 h-6 flex justify-start items-center p-[2px] bg-blue-600 rounded">
