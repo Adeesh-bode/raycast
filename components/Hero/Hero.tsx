@@ -9,26 +9,29 @@ import { Button } from '../ui/Moving-border';
 
 
 const Hero = () => {
-  const handleVideoEnd = (e) => {
-    e.target.pause(); 
+  const handleVideoEnd = (e: React.SyntheticEvent<HTMLVideoElement>) => {
+    const videoElement = e.currentTarget as HTMLVideoElement;
+    videoElement.pause();
   };
   return (
     <div className='w-full  flex flex-col justify-end items-center  mt-7 gap-32 md:gap-48  '>  {/* red-bg  */}
-        <div className='absolute top-9 inset-0 z-0 overflow-hidden'>
+        {/* <div className='absolute top-9 inset-0 z-0 overflow-hidden'> */}
+        <div className='absolute inset-0 z-0 overflow-hidden'>
         <video 
           src='/Effective.mp4' 
           autoPlay 
           muted 
           controls={false} 
           onEnded={(e)=>handleVideoEnd(e)}
-          className='w-full h-[450px] object-cover opacity-40' 
+          // className='w-full h-[450px] object-cover opacity-40' 
+          className='w-full h-full object-cover opacity-20' 
         />
       </div>
         <motion.div 
         variants={container} 
         initial="hidden" 
         animate="visible"  
-        className='w-4/5 md:w-1/2 flex flex-col items-center gap-9 mt-36 md:mt-80 relative z-10'
+        className='w-4/5 md:w-1/2 flex flex-col items-center gap-9 mt-36 md:mt-72 relative z-10'
       >
         <motion.h1 
           className='text-3xl md:text-6xl text-center font-medium ' 
