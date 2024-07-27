@@ -33,15 +33,15 @@ const Ai = () => {
             
             <div className="seperate" >
                 <span className="p-2 bg-gray-200/25 text-center" >1</span>
-                <span className="py-2 px-3 bg-gray-300/25 text-center" >Notion</span>
+                <span className="py-2 px-3 bg-gray-200 text-center" >Notion</span>
             </div>
             <div className="seperate" >
                 <span className="p-2 bg-gray-200/25 text-center" >2</span>
-                <span className="py-2 px-3 bg-gray-300/25 text-center" >Obsidian</span>
+                <span className="py-2 px-3 bg-gray-200 text-center" >Obsidian</span>
             </div>
             <div className="seperate" >
                 <span className="p-2 bg-gray-200/25   text-center" >3</span>
-                <span className="py-2 px-3 bg-gray-300/25  text-center" >+10 more</span>
+                <span className="py-2 px-3 bg-gray-200  text-center" >+10 more</span>
             </div>
           
           </div>
