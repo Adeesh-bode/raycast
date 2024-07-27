@@ -7,7 +7,7 @@ const Management = () => {
         <ReactTyped strings={["Window Management"]} typeSpeed={150} loop />
         </div>
         <div className='w-full h-full p-3 text-base'>
-            <span className="text-neutral-700" >Results</span>
+            <span className="text-neutral-300" >Results</span>
             <div className="w-full hover:bg-gray-500/25  " >
                 
                 <div className="w-full hover:bg-gray-500/25 p-2 flex justify-start items-center gap-2 " >
@@ -17,7 +17,7 @@ const Management = () => {
                         </span>
                     </span>
                     <span>Left Half</span>
-                    <span className="text-neutral-600" >Window Management</span>
+                    <span className="text-neutral-300" >Window Management</span>
                 </div>
 
                 <div className="w-full hover:bg-gray-500/25 p-2 flex justify-start items-center gap-2 " >
@@ -27,7 +27,7 @@ const Management = () => {
                         </span>
                     </span>
                     <span>Right Half</span>
-                    <span className="text-neutral-600" >Window Management</span>
+                    <span className="text-neutral-300" >Window Management</span>
                 </div>
 
                 <div className="w-full hover:bg-gray-500/25 p-2 flex justify-start items-center gap-2 " >
@@ -37,7 +37,7 @@ const Management = () => {
                         </span>
                     </span>
                     <span>Miximize</span>
-                    <span className="text-neutral-600" >Window Management</span>
+                    <span className="text-neutral-300" >Window Management</span>
                 </div>
                 
                 <div className="w-full hover:bg-gray-500/25 p-2 flex justify-start items-center gap-2 " >
@@ -47,7 +47,7 @@ const Management = () => {
                         </span>
                     </span>
                     <span>Last third</span>
-                    <span className="text-neutral-600" >Window Management</span>
+                    <span className="text-neutral-300" >Window Management</span>
                 </div>
                 
                 <div className="w-full hover:bg-gray-500/25 p-2 flex justify-start items-center gap-2 " >
@@ -57,7 +57,7 @@ const Management = () => {
                         </span>
                     </span>
                     <span>Two third</span>
-                    <span className="text-neutral-600" >Window Management</span>
+                    <span className="text-neutral-300" >Window Management</span>
                 </div>
                 
                 <div className="w-full hover:bg-gray-500/25 p-2 flex justifstart items-center gap-2 " >
@@ -67,7 +67,7 @@ const Management = () => {
                         </span>
                     </span>
                     <span>Top Right Quater</span>
-                    <span className="text-neutral-600" >Window Management</span>
+                    <span className="text-neutral-300" >Window Management</span>
                 </div>
             
 
