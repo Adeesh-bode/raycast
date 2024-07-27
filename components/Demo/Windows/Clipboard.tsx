@@ -5,7 +5,7 @@ import { CiImageOn } from "react-icons/ci";
 
 const Clipboard = () => {
   return (
-    <div className="size-full flex flex-col justify-start items-center pb-[28px] bg-neutral-800/35 " >
+    <div className="size-full flex flex-col justify-start items-center gap-2  p-1  pb-[28px] " >
         <div className="w-full py-3 text-white border-b-2 border-neutral-500  seperate " >
           <div className="seperate gap-[6px]" >
             <div className="p-1 flex-center" >
@@ -60,7 +60,7 @@ const Clipboard = () => {
                 <div className="w-full h-40 flex-center border-b-[2px]  border-neutral-500" >
                     <div className="w-20 h-20 rounded-full bg-red-500 border-[4px] border-red-800" ></div>
                 </div>
-                <div className="w-full flex flex-col justify-start items-start gap-2 p-2 pb-6" >
+                <div className="w-full flex flex-col justify-start items-start gap-2 p-2" >
                   <span className="text-neutral-400" >Information</span>
                   <div className="w-full flex flex-col justify-start gap-2  " >
                     <div className="seperate hover:bg-gray-400/35 border-b-[1px] border-neutral-500 " >
